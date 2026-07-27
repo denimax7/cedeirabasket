@@ -1,0 +1,58 @@
+export const gl = {
+  nav: {
+    home: 'Inicio',
+    club: 'O Club',
+    aboutUs: 'Quen somos',
+    cuerpoTecnico: 'Corpo Técnico',
+    equipos: 'Equipos',
+    torneo3x3: 'Torneo 3x3',
+    inscripcion: 'Inscrición',
+    galeria: 'Galería',
+    contacto: 'Contacto',
+    joinUs: 'Únete',
+  },
+  footer: {
+    tagline: '¡Sente os cores!',
+    quickLinks: 'Ligazóns rápidas',
+    contact: 'Contacto',
+    address: 'Polideportivo Municipal de Cedeira\nAv. España 60, 15357 Cedeira (A Coruña)',
+    email: 'cedeirabasket@gmail.com',
+    phone: '722 558 145',
+    social: 'Redes Sociais',
+    copyright: '© 2026 Cedeira Basket Club. Todos os dereitos reservados.',
+    legal: 'Aviso Legal',
+    privacy: 'Política de Privacidade',
+    followUs: 'Síguenos en',
+  },
+  common: {
+    comingSoon: 'Próximamente',
+    underConstruction: 'Esta sección está en construción. Volve pronto.',
+    backHome: 'Volver ao inicio',
+    learnMore: 'Saber máis',
+    joinUs: 'Únete ao club',
+    register: 'Inscríbete',
+    contact: 'Contacta connosco',
+    season: 'TEMPADA 2026·2027',
+  },
+  home: {
+    heroKicker: 'TEMPADA 2026·2027',
+    heroTitle: 'O teu equipo.\nA túa cidade.',
+    heroSubtitle:
+      'Baloncesto de base en Cedeira para nenos e nenas a partir de 7 anos. Únete á familia do Cedeira Basket Club.',
+    heroCta1: 'Inscríbete agora',
+    heroCta2: 'Coñece o club',
+  },
+  pages: {
+    club: { title: 'O Club', description: 'Quiénes somos, historia y valores del Cedeira Basket Club.' },
+    cuerpoTecnico: { title: 'Corpo Técnico', description: 'Noso equipo de entrenadores e monitores.' },
+    equipos: { title: 'Equipos', description: 'Todas las categorías del club.' },
+    torneo3x3: { title: 'Torneo 3x3', description: 'O noso torneo de baloncesto 3x3 en Cedeira.' },
+    inscripcion: { title: 'Inscrición', description: 'Únete ao Cedeira Basket Club.' },
+    galeria: { title: 'Galería', description: 'Fotos e álbumes do club.' },
+    contacto: { title: 'Contacto', description: 'Contacta co Cedeira Basket Club.' },
+    avisoLegal: { title: 'Aviso Legal' },
+    privacidade: { title: 'Política de Privacidade' },
+  },
+}
+
+export type Dictionary = typeof gl

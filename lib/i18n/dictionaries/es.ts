@@ -1,0 +1,58 @@
+import type { Dictionary } from './gl'
+
+export const es: Dictionary = {
+  nav: {
+    home: 'Inicio',
+    club: 'El Club',
+    aboutUs: 'Quiénes somos',
+    cuerpoTecnico: 'Cuerpo Técnico',
+    equipos: 'Equipos',
+    torneo3x3: 'Torneo 3x3',
+    inscripcion: 'Inscripción',
+    galeria: 'Galería',
+    contacto: 'Contacto',
+    joinUs: 'Únete',
+  },
+  footer: {
+    tagline: '¡Siente los colores!',
+    quickLinks: 'Enlaces rápidos',
+    contact: 'Contacto',
+    address: 'Polideportivo Municipal de Cedeira\nAv. España 60, 15357 Cedeira (A Coruña)',
+    email: 'cedeirabasket@gmail.com',
+    phone: '722 558 145',
+    social: 'Redes Sociales',
+    copyright: '© 2026 Cedeira Basket Club. Todos los derechos reservados.',
+    legal: 'Aviso Legal',
+    privacy: 'Política de Privacidad',
+    followUs: 'Síguenos en',
+  },
+  common: {
+    comingSoon: 'Próximamente',
+    underConstruction: 'Esta sección está en construcción. Vuelve pronto.',
+    backHome: 'Volver al inicio',
+    learnMore: 'Saber más',
+    joinUs: 'Únete al club',
+    register: 'Inscríbete',
+    contact: 'Contáctanos',
+    season: 'TEMPORADA 2026·2027',
+  },
+  home: {
+    heroKicker: 'TEMPORADA 2026·2027',
+    heroTitle: 'Tu equipo.\nTu ciudad.',
+    heroSubtitle:
+      'Baloncesto de base en Cedeira para niños y niñas a partir de 7 años. Únete a la familia del Cedeira Basket Club.',
+    heroCta1: 'Inscríbete ahora',
+    heroCta2: 'Conoce el club',
+  },
+  pages: {
+    club: { title: 'El Club', description: 'Quiénes somos, historia y valores del Cedeira Basket Club.' },
+    cuerpoTecnico: { title: 'Cuerpo Técnico', description: 'Nuestro equipo de entrenadores y monitores.' },
+    equipos: { title: 'Equipos', description: 'Todas las categorías del club.' },
+    torneo3x3: { title: 'Torneo 3x3', description: 'Nuestro torneo de baloncesto 3x3 en Cedeira.' },
+    inscripcion: { title: 'Inscripción', description: 'Únete al Cedeira Basket Club.' },
+    galeria: { title: 'Galería', description: 'Fotos y álbumes del club.' },
+    contacto: { title: 'Contacto', description: 'Contacta con el Cedeira Basket Club.' },
+    avisoLegal: { title: 'Aviso Legal' },
+    privacidade: { title: 'Política de Privacidad' },
+  },
+}
