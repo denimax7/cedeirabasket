@@ -9,6 +9,10 @@ export interface Categoria {
   color: string
   trainingGl: string
   trainingEs: string
+  coachGl: string
+  coachEs: string
+  descGl: string
+  descEs: string
 }
 
 export const categorias: Categoria[] = equiposJson.categorias as Categoria[]

@@ -8,7 +8,11 @@
       "birthYears": "2018-2019",
       "color": "bg-blue",
       "trainingGl": "Mércores e venres · 17:00",
-      "trainingEs": "Miércoles y viernes · 17:00"
+      "trainingEs": "Miércoles y viernes · 17:00",
+      "coachGl": "Por confirmar",
+      "coachEs": "Por confirmar",
+      "descGl": "Iniciación ao baloncesto. Traballamos a coordinación, o xogo en equipo e o amor polo deporte nun ambiente lúdico e divertido.",
+      "descEs": "Iniciación al baloncesto. Trabajamos la coordinación, el juego en equipo y el amor por el deporte en un ambiente lúdico y divertido."
     },
     {
       "id": "benjamin",
@@ -18,7 +22,11 @@
       "birthYears": "2016-2017",
       "color": "bg-navy",
       "trainingGl": "Martes e xoves · 17:30",
-      "trainingEs": "Martes y jueves · 17:30"
+      "trainingEs": "Martes y jueves · 17:30",
+      "coachGl": "Por confirmar",
+      "coachEs": "Por confirmar",
+      "descGl": "Comezamos coa técnica individual: bote, pase e tiro. Os nenos aprenden as regras básicas do baloncesto en partidos adaptados.",
+      "descEs": "Comenzamos con la técnica individual: bote, pase y tiro. Los niños aprenden las reglas básicas del baloncesto en partidos adaptados."
     },
     {
       "id": "alevin",
@@ -28,7 +36,11 @@
       "birthYears": "2014-2015",
       "color": "bg-blue",
       "trainingGl": "Luns e mércores · 18:00",
-      "trainingEs": "Lunes y miércoles · 18:00"
+      "trainingEs": "Lunes y miércoles · 18:00",
+      "coachGl": "Por confirmar",
+      "coachEs": "Por confirmar",
+      "descGl": "Consolidamos a técnica e introducimos os primeiros conceptos tácticos. Competimos na liga federada galega.",
+      "descEs": "Consolidamos la técnica e introducimos los primeros conceptos tácticos. Competimos en la liga federada gallega."
     },
     {
       "id": "infantil",
@@ -38,7 +50,11 @@
       "birthYears": "2012-2013",
       "color": "bg-navy",
       "trainingGl": "Martes e xoves · 19:00",
-      "trainingEs": "Martes y jueves · 19:00"
+      "trainingEs": "Martes y jueves · 19:00",
+      "coachGl": "Por confirmar",
+      "coachEs": "Por confirmar",
+      "descGl": "Nivel de esixencia maior. Traballamos sistemas de xogo, defensa e ataque. Competición federada con viaxes a outros clubs da provincia.",
+      "descEs": "Mayor nivel de exigencia. Trabajamos sistemas de juego, defensa y ataque. Competición federada con desplazamientos a otros clubs de la provincia."
     },
     {
       "id": "cadete",
@@ -48,7 +64,11 @@
       "birthYears": "2010-2011",
       "color": "bg-black",
       "trainingGl": "Luns, mércores e venres · 19:30",
-      "trainingEs": "Lunes, miércoles y viernes · 19:30"
+      "trainingEs": "Lunes, miércoles y viernes · 19:30",
+      "coachGl": "Por confirmar",
+      "coachEs": "Por confirmar",
+      "descGl": "A nosa categoría de máis nivel. Adestramento intensivo tres días á semana e competición na liga galega cadete.",
+      "descEs": "Nuestra categoría de mayor nivel. Entrenamiento intensivo tres días a la semana y competición en la liga gallega cadete."
     }
   ]
 }

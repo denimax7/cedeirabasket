@@ -18,9 +18,9 @@ export default async function ClubPage({ params }: { params: Promise<{ lang: str
   ]
 
   const valores = [
-    { title: c.valor1Title, desc: c.valor1Desc, icon: '🏀' },
-    { title: c.valor2Title, desc: c.valor2Desc, icon: '🏡' },
-    { title: c.valor3Title, desc: c.valor3Desc, icon: '🤝' },
+    { title: c.valor1Title, desc: c.valor1Desc },
+    { title: c.valor2Title, desc: c.valor2Desc },
+    { title: c.valor3Title, desc: c.valor3Desc },
   ]
 
   return (
@@ -90,7 +90,6 @@ export default async function ClubPage({ params }: { params: Promise<{ lang: str
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {valores.map((v) => (
               <div key={v.title} className="bg-white p-8 border-t-4 border-blue">
-                <div className="text-3xl mb-5">{v.icon}</div>
                 <h3 className="font-display font-black text-2xl uppercase tracking-tight text-black mb-3">
                   {v.title}
                 </h3>

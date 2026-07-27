@@ -98,6 +98,17 @@
     "ctaBtn1": "Inscríbete",
     "ctaBtn2": "Contáctanos"
   },
+  "equipos": {
+    "introKicker": "TEMPORADA 2026·2027",
+    "introTitle": "Nuestros equipos",
+    "introSubtitle": "Cinco categorías para niños y niñas de 7 a 16 años. Ven a entrenar con el Cedeira Basket Club.",
+    "agesLabel": "Edades",
+    "birthYearsLabel": "Nacidos en",
+    "trainingLabel": "Entrenamiento",
+    "coachLabel": "Entrenador/a",
+    "registerCta": "Inscríbete en esta categoría",
+    "contactCta": "Más información"
+  },
   "corpoTecnico": {
     "coachesTitle": "Entrenadores",
     "directivaTitle": "Directiva",
