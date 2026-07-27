@@ -23,6 +23,9 @@ export function Hero({ lang, dict }: HeroProps) {
         priority
       />
 
+      {/* Subtle left-side text legibility gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
+
       <Container className="relative py-28 lg:py-36">
         <div className="max-w-2xl">
           <Badge variant="blue" className="mb-6">
