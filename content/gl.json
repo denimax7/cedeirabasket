@@ -72,6 +72,38 @@
     "mapaBtn": "Como chegar",
     "contactBtn": "Contacta connosco"
   },
+  "club": {
+    "historyKicker": "A NOSA HISTORIA",
+    "historyTitle": "Baloncesto de base en Cedeira",
+    "historyBody1": "O Cedeira Basket Club naceu coa misión de achegar o baloncesto á mocidade de Cedeira e a comarca. Dende os nosos inicios, traballamos para ofrecer un espazo de formación, deporte e compañeirismo para nenas e nenos de todas as idades.",
+    "historyBody2": "Hoxe contamos con categorías dende o Mini-Basket ata o Cadete, con máis de 50 deportistas e un equipo técnico titulado e comprometido co baloncesto de base galego.",
+    "foundedLabel": "Fundación",
+    "foundedValue": "2018",
+    "membersLabel": "Deportistas",
+    "membersValue": "+50",
+    "categoriesLabel": "Categorías",
+    "categoriesValue": "5",
+    "locationLabel": "Sede",
+    "locationValue": "Cedeira, A Coruña",
+    "valoresKicker": "OS NOSOS VALORES",
+    "valoresTitle": "O que nos define",
+    "valor1Title": "Formación",
+    "valor1Desc": "O noso obxectivo é formar persoas a través do deporte. A técnica e a táctica van da man dos valores humanos.",
+    "valor2Title": "Comunidade",
+    "valor2Desc": "Somos un club de Cedeira. Orgullosos das nosas raíces e comprometidos co desenvolvemento deportivo da comarca.",
+    "valor3Title": "Compañeirismo",
+    "valor3Desc": "O vestiario, os adestramentos e os partidos forxan amizades e vínculos que van máis aló do deporte.",
+    "ctaTitle": "Forma parte do club",
+    "ctaDesc": "Apúntate ao Cedeira Basket Club. Categorías para todos os niveis e idades a partir dos 7 anos.",
+    "ctaBtn1": "Inscríbete",
+    "ctaBtn2": "Contacta connosco"
+  },
+  "corpoTecnico": {
+    "coachesTitle": "Entrenadores",
+    "directivaTitle": "Directiva",
+    "licenciaLabel": "Titulación",
+    "categoriesLabel": "Categorías"
+  },
   "pages": {
     "club": {
       "title": "O Club",
