@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Archivo, Inter } from 'next/font/google'
+import { Barlow_Condensed, Inter } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({
@@ -8,10 +8,10 @@ const inter = Inter({
   display: 'swap',
 })
 
-const archivo = Archivo({
+const barlowCondensed = Barlow_Condensed({
   subsets: ['latin'],
-  variable: '--font-archivo',
-  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-barlow',
+  weight: ['400', '600', '700', '800', '900'],
   display: 'swap',
 })
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="gl" className={`${inter.variable} ${archivo.variable}`}>
+    <html lang="gl" className={`${inter.variable} ${barlowCondensed.variable}`}>
       <body className="min-h-screen flex flex-col bg-white text-black antialiased">
         {children}
       </body>

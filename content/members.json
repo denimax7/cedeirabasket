@@ -1,0 +1,60 @@
+{
+  "corpo": [
+    {
+      "id": "entrenador-1",
+      "nameGl": "Nome Apelidos",
+      "nameEs": "Nombre Apellidos",
+      "roleGl": "Entrenador Principal",
+      "roleEs": "Entrenador Principal",
+      "categoriesGl": ["Cadete", "Infantil"],
+      "categoriesEs": ["Cadete", "Infantil"],
+      "licencia": "Titulación FEB Nivel II",
+      "photo": null,
+      "bio": ""
+    },
+    {
+      "id": "entrenador-2",
+      "nameGl": "Nome Apelidos",
+      "nameEs": "Nombre Apellidos",
+      "roleGl": "Entrenador",
+      "roleEs": "Entrenador",
+      "categoriesGl": ["Alevín", "Benjamín"],
+      "categoriesEs": ["Alevín", "Benjamín"],
+      "licencia": "Titulación FEB Nivel I",
+      "photo": null,
+      "bio": ""
+    },
+    {
+      "id": "monitor-1",
+      "nameGl": "Nome Apelidos",
+      "nameEs": "Nombre Apellidos",
+      "roleGl": "Monitor",
+      "roleEs": "Monitor",
+      "categoriesGl": ["Mini-Basket"],
+      "categoriesEs": ["Mini-Basket"],
+      "licencia": "",
+      "photo": null,
+      "bio": ""
+    }
+  ],
+  "directiva": [
+    {
+      "id": "presidente",
+      "nameGl": "Nome Apelidos",
+      "nameEs": "Nombre Apellidos",
+      "roleGl": "Presidente",
+      "roleEs": "Presidente",
+      "email": "",
+      "photo": null
+    },
+    {
+      "id": "secretaria",
+      "nameGl": "Nome Apelidos",
+      "nameEs": "Nombre Apellidos",
+      "roleGl": "Secretaria",
+      "roleEs": "Secretaria",
+      "email": "",
+      "photo": null
+    }
+  ]
+}

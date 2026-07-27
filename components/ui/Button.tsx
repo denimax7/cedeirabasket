@@ -15,7 +15,7 @@ interface ButtonProps {
 }
 
 const base =
-  'inline-flex items-center justify-center font-body font-semibold rounded-xl transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none cursor-pointer'
+  'inline-flex items-center justify-center font-body font-semibold rounded transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none cursor-pointer'
 
 const variants: Record<Variant, string> = {
   primary: 'bg-blue text-white hover:bg-blue-bright',

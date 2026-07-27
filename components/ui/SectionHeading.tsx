@@ -28,8 +28,8 @@ export function SectionHeading({
       {kicker && (
         <p
           className={cn(
-            'mb-3 text-sm font-semibold uppercase tracking-widest font-body',
-            light ? 'text-blue-bright' : 'text-blue',
+            'mb-3 text-xs font-semibold uppercase tracking-[0.2em] font-body',
+            light ? 'text-blue' : 'text-blue',
           )}
         >
           {kicker}
@@ -37,7 +37,7 @@ export function SectionHeading({
       )}
       <h2
         className={cn(
-          'font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl',
+          'font-display font-black text-4xl sm:text-5xl uppercase tracking-tight leading-none',
           light ? 'text-white' : 'text-black',
         )}
       >
@@ -46,7 +46,7 @@ export function SectionHeading({
       {subtitle && (
         <p
           className={cn(
-            'mt-4 text-lg leading-relaxed font-body',
+            'mt-4 text-base leading-relaxed font-body',
             light ? 'text-gray-300' : 'text-gray-300',
           )}
         >

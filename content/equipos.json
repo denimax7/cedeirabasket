@@ -1,0 +1,54 @@
+{
+  "categorias": [
+    {
+      "id": "minibasket",
+      "nameGl": "Mini-Basket",
+      "nameEs": "Mini-Basket",
+      "ages": "7-8 anos",
+      "birthYears": "2018-2019",
+      "color": "bg-blue",
+      "trainingGl": "Mércores e venres · 17:00",
+      "trainingEs": "Miércoles y viernes · 17:00"
+    },
+    {
+      "id": "benjamin",
+      "nameGl": "Benjamín",
+      "nameEs": "Benjamín",
+      "ages": "9-10 anos",
+      "birthYears": "2016-2017",
+      "color": "bg-navy",
+      "trainingGl": "Martes e xoves · 17:30",
+      "trainingEs": "Martes y jueves · 17:30"
+    },
+    {
+      "id": "alevin",
+      "nameGl": "Alevín",
+      "nameEs": "Alevín",
+      "ages": "11-12 anos",
+      "birthYears": "2014-2015",
+      "color": "bg-blue",
+      "trainingGl": "Luns e mércores · 18:00",
+      "trainingEs": "Lunes y miércoles · 18:00"
+    },
+    {
+      "id": "infantil",
+      "nameGl": "Infantil",
+      "nameEs": "Infantil",
+      "ages": "13-14 anos",
+      "birthYears": "2012-2013",
+      "color": "bg-navy",
+      "trainingGl": "Martes e xoves · 19:00",
+      "trainingEs": "Martes y jueves · 19:00"
+    },
+    {
+      "id": "cadete",
+      "nameGl": "Cadete",
+      "nameEs": "Cadete",
+      "ages": "15-16 anos",
+      "birthYears": "2010-2011",
+      "color": "bg-black",
+      "trainingGl": "Luns, mércores e venres · 19:30",
+      "trainingEs": "Lunes, miércoles y viernes · 19:30"
+    }
+  ]
+}

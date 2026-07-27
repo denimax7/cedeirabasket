@@ -19,7 +19,7 @@ export function Badge({ children, variant = 'blue', className }: BadgeProps) {
   return (
     <span
       className={cn(
-        'inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide font-body',
+        'inline-flex items-center rounded-sm px-3 py-1 text-xs font-semibold uppercase tracking-widest font-body',
         variants[variant],
         className,
       )}

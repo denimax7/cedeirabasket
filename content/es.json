@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "club": "El Club",
+    "aboutUs": "Quiénes somos",
+    "cuerpoTecnico": "Cuerpo Técnico",
+    "equipos": "Equipos",
+    "actividades": "Actividades",
+    "torneo3x3": "Torneo 3x3",
+    "campamentos": "Campamentos de Verano",
+    "inscripcion": "Inscripción",
+    "galeria": "Galería",
+    "contacto": "Contacto",
+    "joinUs": "Únete"
+  },
+  "footer": {
+    "tagline": "¡Siente los colores!",
+    "quickLinks": "Enlaces rápidos",
+    "contact": "Contacto",
+    "address": "Polideportivo Municipal de Cedeira\nAv. España 60, 15357 Cedeira (A Coruña)",
+    "email": "cedeirabasket@gmail.com",
+    "phone": "722 558 145",
+    "social": "Redes Sociales",
+    "copyright": "© 2026 Cedeira Basket Club. Todos los derechos reservados.",
+    "legal": "Aviso Legal",
+    "privacy": "Política de Privacidad",
+    "followUs": "Síguenos en"
+  },
+  "common": {
+    "comingSoon": "Próximamente",
+    "underConstruction": "Esta sección está en construcción. Vuelve pronto.",
+    "backHome": "Volver al inicio",
+    "learnMore": "Saber más",
+    "joinUs": "Únete al club",
+    "register": "Inscríbete",
+    "contact": "Contáctanos",
+    "season": "TEMPORADA 2026·2027",
+    "seeAll": "Ver todo",
+    "addToCalendar": "Añadir al calendario",
+    "whereWeAre": "Dónde estamos",
+    "ourCategories": "Nuestras categorías",
+    "latestPhotos": "Últimas fotos",
+    "nextEvent": "Próximo evento",
+    "days": "días",
+    "hours": "horas",
+    "min": "min",
+    "sec": "seg"
+  },
+  "home": {
+    "heroKicker": "TEMPORADA 2026·2027",
+    "heroTitle": "Tu equipo.\nTu ciudad.",
+    "heroSubtitle": "Baloncesto de base en Cedeira para niños y niñas a partir de 7 años. Únete a la familia del Cedeira Basket Club.",
+    "heroCta1": "Inscríbete ahora",
+    "heroCta2": "Conoce el club",
+    "destacadosTitle": "Todo lo que ofrecemos",
+    "destacado1Title": "Actividades",
+    "destacado1Desc": "Torneo 3x3, campamentos de verano y más eventos a lo largo del año.",
+    "destacado2Title": "Inscripción abierta",
+    "destacado2Desc": "Apúntate al club. Categorías desde los 7 años. Proceso sencillo y rápido.",
+    "destacado3Title": "Cuerpo Técnico",
+    "destacado3Desc": "Entrenadores titulados y apasionados por el baloncesto y la formación.",
+    "categoriasKicker": "TEMPORADA 2026·2027",
+    "categoriasTitle": "Nuestras categorías",
+    "categoriasSubtitle": "Del Mini-Basket al Cadete, tenemos un equipo para cada edad.",
+    "galeriaKicker": "GALERÍA",
+    "galeriaTitle": "Nuestros momentos",
+    "galeriaSubtitle": "Fotos de los entrenamientos, partidos y eventos del club.",
+    "galeriaBtn": "Ver todos los álbumes",
+    "mapaKicker": "DÓNDE ESTAMOS",
+    "mapaTitle": "Ven a conocernos",
+    "mapaSubtitle": "Estamos en el Polideportivo Municipal de Cedeira. Ven a vernos.",
+    "mapaBtn": "Cómo llegar",
+    "contactBtn": "Contáctanos"
+  },
+  "pages": {
+    "club": {
+      "title": "El Club",
+      "description": "Quiénes somos, historia y valores del Cedeira Basket Club."
+    },
+    "cuerpoTecnico": {
+      "title": "Cuerpo Técnico",
+      "description": "Nuestro equipo de entrenadores y monitores."
+    },
+    "equipos": {
+      "title": "Equipos",
+      "description": "Todas las categorías del club."
+    },
+    "torneo3x3": {
+      "title": "Torneo 3x3",
+      "description": "Nuestro torneo de baloncesto 3x3 en Cedeira."
+    },
+    "campamentos": {
+      "title": "Campamentos de Verano",
+      "description": "Campamentos de baloncesto para el verano."
+    },
+    "inscripcion": {
+      "title": "Inscripción",
+      "description": "Únete al Cedeira Basket Club."
+    },
+    "galeria": {
+      "title": "Galería",
+      "description": "Fotos y álbumes del club."
+    },
+    "contacto": {
+      "title": "Contacto",
+      "description": "Contacta con el Cedeira Basket Club."
+    },
+    "avisoLegal": {
+      "title": "Aviso Legal"
+    },
+    "privacidade": {
+      "title": "Política de Privacidad"
+    }
+  }
+}

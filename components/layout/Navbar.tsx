@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
@@ -20,15 +21,20 @@ interface NavbarProps {
 
 function Logo({ lang }: { lang: string }) {
   return (
-    <Link href={`/${lang}`} className="flex items-center gap-3 shrink-0">
-      <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-blue">
-        <span className="font-display font-black text-white text-sm leading-none">CB</span>
-      </div>
-      <div className="leading-none">
-        <span className="block font-display font-black text-blue-bright text-base tracking-wide uppercase">
+    <Link href={`/${lang}`} className="flex items-center gap-2.5 shrink-0">
+      <Image
+        src="/logo.png"
+        alt="Cedeira Basket Club"
+        width={38}
+        height={38}
+        className="object-contain"
+        priority
+      />
+      <div className="leading-none hidden sm:block">
+        <span className="block font-display font-black text-white text-base tracking-wide uppercase leading-none">
           Cedeira
         </span>
-        <span className="block font-display font-black text-white text-xs tracking-widest uppercase opacity-80">
+        <span className="block font-display font-bold text-blue text-xs tracking-widest uppercase opacity-90 leading-none mt-0.5">
           Basket Club
         </span>
       </div>
@@ -46,12 +52,12 @@ function LanguageSwitcher({ lang }: { lang: string }) {
   }
 
   return (
-    <div className="flex items-center gap-1 rounded-lg bg-white/10 p-1">
+    <div className="flex items-center gap-0.5 bg-white/10 p-0.5 rounded-sm">
       {(['gl', 'es'] as const).map((locale) => (
         <Link
           key={locale}
           href={switchTo(locale)}
-          className={`px-2.5 py-1 rounded-md text-xs font-semibold uppercase tracking-wider transition-colors ${
+          className={`px-2.5 py-1 rounded-sm text-xs font-semibold uppercase tracking-wider transition-colors ${
             lang === locale
               ? 'bg-blue text-white'
               : 'text-gray-300 hover:text-white'
@@ -64,13 +70,7 @@ function LanguageSwitcher({ lang }: { lang: string }) {
   )
 }
 
-function DesktopDropdown({
-  link,
-  isActive,
-}: {
-  link: NavLink
-  isActive: boolean
-}) {
+function DesktopDropdown({ link, isActive }: { link: NavLink; isActive: boolean }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -80,13 +80,13 @@ function DesktopDropdown({
       onMouseLeave={() => setOpen(false)}
     >
       <button
-        className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-          isActive ? 'text-blue-bright' : 'text-gray-300 hover:text-white'
+        className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors ${
+          isActive ? 'text-blue' : 'text-gray-300 hover:text-white'
         }`}
       >
         {link.label}
         <svg
-          className={`w-3.5 h-3.5 transition-transform ${open ? 'rotate-180' : ''}`}
+          className={`w-3 h-3 transition-transform ${open ? 'rotate-180' : ''}`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -98,17 +98,17 @@ function DesktopDropdown({
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, y: -4 }}
+            initial={{ opacity: 0, y: -6 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -4 }}
+            exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.15 }}
-            className="absolute top-full left-0 mt-1 w-48 rounded-xl bg-navy border border-white/10 shadow-xl py-1.5 z-50"
+            className="absolute top-full left-0 mt-1 w-48 rounded-md bg-navy border border-white/10 shadow-xl py-1 z-50"
           >
             {link.children!.map((child) => (
               <Link
                 key={child.href}
                 href={child.href}
-                className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
+                className="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
               >
                 {child.label}
               </Link>
@@ -136,7 +136,14 @@ export function Navbar({ lang, dict }: NavbarProps) {
       ],
     },
     { href: `/${lang}/equipos`, label: dict.nav.equipos },
-    { href: `/${lang}/3x3`, label: dict.nav.torneo3x3 },
+    {
+      href: `/${lang}/actividades`,
+      label: dict.nav.actividades,
+      children: [
+        { href: `/${lang}/actividades/3x3`, label: dict.nav.torneo3x3 },
+        { href: `/${lang}/actividades/campamentos`, label: dict.nav.campamentos },
+      ],
+    },
     { href: `/${lang}/inscripcion`, label: dict.nav.inscripcion },
     { href: `/${lang}/galeria`, label: dict.nav.galeria },
     { href: `/${lang}/contacto`, label: dict.nav.contacto },
@@ -165,26 +172,19 @@ export function Navbar({ lang, dict }: NavbarProps) {
     >
       <Container>
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <Logo lang={lang} />
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center">
             {navLinks.map((link) =>
               link.children ? (
-                <DesktopDropdown
-                  key={link.href}
-                  link={link}
-                  isActive={isActive(link.href)}
-                />
+                <DesktopDropdown key={link.href} link={link} isActive={isActive(link.href)} />
               ) : (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                    isActive(link.href)
-                      ? 'text-blue-bright'
-                      : 'text-gray-300 hover:text-white'
+                  className={`px-3 py-2 text-sm font-medium transition-colors ${
+                    isActive(link.href) ? 'text-blue' : 'text-gray-300 hover:text-white'
                   }`}
                 >
                   {link.label}
@@ -193,34 +193,31 @@ export function Navbar({ lang, dict }: NavbarProps) {
             )}
           </nav>
 
-          {/* Right side: language switcher + CTA */}
+          {/* Right — language + CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <LanguageSwitcher lang={lang} />
             <Link
               href={`/${lang}/inscripcion`}
-              className="inline-flex items-center h-9 px-4 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-blue-bright transition-colors"
+              className="inline-flex items-center h-9 px-5 rounded bg-blue text-white text-sm font-semibold hover:bg-blue-bright transition-colors"
             >
               {dict.nav.joinUs}
             </Link>
           </div>
 
-          {/* Mobile: lang + hamburger */}
+          {/* Mobile — lang + hamburger */}
           <div className="flex lg:hidden items-center gap-2">
             <LanguageSwitcher lang={lang} />
             <button
               onClick={() => setMobileOpen((v) => !v)}
               aria-label="Menú"
-              className="p-2 text-white rounded-lg hover:bg-white/10 transition-colors"
+              className="p-2 text-white hover:bg-white/10 transition-colors rounded-sm"
             >
               <motion.div
                 animate={mobileOpen ? 'open' : 'closed'}
                 className="w-5 h-5 flex flex-col justify-center gap-1"
               >
                 <motion.span
-                  variants={{
-                    open: { rotate: 45, y: 6 },
-                    closed: { rotate: 0, y: 0 },
-                  }}
+                  variants={{ open: { rotate: 45, y: 6 }, closed: { rotate: 0, y: 0 } }}
                   transition={{ duration: 0.2 }}
                   className="block h-0.5 w-5 bg-white origin-center"
                 />
@@ -230,10 +227,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
                   className="block h-0.5 w-5 bg-white"
                 />
                 <motion.span
-                  variants={{
-                    open: { rotate: -45, y: -6 },
-                    closed: { rotate: 0, y: 0 },
-                  }}
+                  variants={{ open: { rotate: -45, y: -6 }, closed: { rotate: 0, y: 0 } }}
                   transition={{ duration: 0.2 }}
                   className="block h-0.5 w-5 bg-white origin-center"
                 />
@@ -250,30 +244,30 @@ export function Navbar({ lang, dict }: NavbarProps) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: 'easeInOut' }}
+            transition={{ duration: 0.22, ease: 'easeInOut' }}
             className="lg:hidden overflow-hidden border-t border-white/10 bg-black"
           >
             <Container>
-              <nav className="py-4 flex flex-col gap-1">
+              <nav className="py-4 flex flex-col">
                 {navLinks.map((link) => (
                   <div key={link.href}>
                     <Link
                       href={link.href}
-                      className={`block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                      className={`block px-3 py-2.5 text-sm font-medium transition-colors rounded-sm ${
                         isActive(link.href)
-                          ? 'text-blue-bright bg-blue/10'
+                          ? 'text-blue bg-blue/10'
                           : 'text-gray-300 hover:text-white hover:bg-white/5'
                       }`}
                     >
                       {link.label}
                     </Link>
                     {link.children && (
-                      <div className="ml-4 mt-1 flex flex-col gap-1">
+                      <div className="ml-4 flex flex-col">
                         {link.children.map((child) => (
                           <Link
                             key={child.href}
                             href={child.href}
-                            className="block px-3 py-2 rounded-lg text-xs text-gray-300 hover:text-white hover:bg-white/5 transition-colors"
+                            className="block px-3 py-2 text-xs text-gray-300 hover:text-white hover:bg-white/5 transition-colors rounded-sm"
                           >
                             {child.label}
                           </Link>
@@ -285,7 +279,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
                 <div className="mt-3 pt-3 border-t border-white/10">
                   <Link
                     href={`/${lang}/inscripcion`}
-                    className="block text-center h-11 leading-[2.75rem] px-6 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-blue-bright transition-colors"
+                    className="block text-center py-2.5 px-6 rounded bg-blue text-white text-sm font-semibold hover:bg-blue-bright transition-colors"
                   >
                     {dict.nav.joinUs}
                   </Link>

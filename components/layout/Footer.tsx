@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
 import type { Dictionary } from '@/lib/i18n'
 
@@ -29,7 +30,8 @@ export function Footer({ lang, dict }: FooterProps) {
   const quickLinks = [
     { href: `/${lang}/club`, label: dict.nav.club },
     { href: `/${lang}/equipos`, label: dict.nav.equipos },
-    { href: `/${lang}/3x3`, label: dict.nav.torneo3x3 },
+    { href: `/${lang}/actividades/3x3`, label: dict.nav.torneo3x3 },
+    { href: `/${lang}/actividades/campamentos`, label: dict.nav.campamentos },
     { href: `/${lang}/inscripcion`, label: dict.nav.inscripcion },
     { href: `/${lang}/galeria`, label: dict.nav.galeria },
     { href: `/${lang}/contacto`, label: dict.nav.contacto },
@@ -44,15 +46,19 @@ export function Footer({ lang, dict }: FooterProps) {
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {/* Brand */}
             <div className="lg:col-span-1">
-              <Link href={`/${lang}`} className="flex items-center gap-3 mb-4">
-                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-blue shrink-0">
-                  <span className="font-display font-black text-white text-sm">CB</span>
-                </div>
+              <Link href={`/${lang}`} className="flex items-center gap-2.5 mb-4">
+                <Image
+                  src="/logo.png"
+                  alt="Cedeira Basket Club"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
                 <div className="leading-none">
-                  <span className="block font-display font-black text-blue-bright tracking-wide uppercase">
+                  <span className="block font-display font-black text-white tracking-wide uppercase leading-none">
                     Cedeira
                   </span>
-                  <span className="block font-display font-bold text-white text-xs tracking-widest uppercase opacity-80">
+                  <span className="block font-display font-bold text-blue text-xs tracking-widest uppercase opacity-90 leading-none mt-0.5">
                     Basket Club
                   </span>
                 </div>
@@ -154,7 +160,7 @@ export function Footer({ lang, dict }: FooterProps) {
               </p>
               <Link
                 href={`/${lang}/inscripcion`}
-                className="inline-flex items-center h-10 px-5 rounded-xl bg-blue text-white text-sm font-semibold hover:bg-blue-bright transition-colors"
+                className="inline-flex items-center h-10 px-5 rounded bg-blue text-white text-sm font-semibold hover:bg-blue-bright transition-colors"
               >
                 {dict.nav.joinUs} →
               </Link>
