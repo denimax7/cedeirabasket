@@ -32,7 +32,7 @@ export function drivePhotoUrl(fileId: string, size = 800) {
 
 export async function getAlbums(): Promise<DriveAlbum[]> {
   const auth = getAuth()
-  const folderId = process.env.GOOGLE_DRIVE_FOLDER_ID
+  const folderId = process.env.GOOGLE_DRIVE_GALLERY_FOLDER_ID
   if (!auth || !folderId) return []
 
   try {
